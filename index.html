@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/main.js">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+   <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a">
+
+                    </i>
+                    <div class="logo-text">
+                        Võ Phương Nam
+                    </div>
+
+                </div>
+                <nav>
+                    <div class="toggleBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="Phương Nam.jpg" alt="profile">
+
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Backend Developer</span></h5>
+                    <h1>Võ Phương Nam</h1>
+                    <p>The career goal of a backend developer is to build and maintain a stable and robust backend system to efficiently and reliably support applications and websites. Additionally, they aim to apply programming and database knowledge to develop backend services and functionalities, optimize performance and security, while creating the best user experience.</p>
+                    <div class="btn-group">
+                        <a href="Võ Phương Nam-Internship.pdf" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100041138525024"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_pnam2002/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   <script scr="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+   <script>
+    let toggleBtn=document.querySelector(".toggleBtn");
+    let nav=document.querySelector(".navlinks");
+    let links=document.querySelector(".navlinks li");
+    toggleBtn.addEventListener("click",function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+    let typed=new Type(".input",{
+        strings:["Backend Developer","UX Designer","Web Developer"],
+        typeSpeed:70,
+        backSpeed:55,
+        loop:true
+    })
+  
+   </script>
+</body>
+</html>
